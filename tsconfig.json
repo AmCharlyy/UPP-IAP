@@ -20,6 +20,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  
+  // 👈 CAMBIADO: Ahora busca archivos TS/TSX en cualquier parte del proyecto (raíz y subcarpetas)
+  "include": ["**/*.ts", "**/*.tsx"] 
+  
+  // 👈 LÍNEA DE "references" ELIMINADA.
 }
